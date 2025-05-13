@@ -1,3 +1,26 @@
 {
-  "apis": []
+  "apis": [
+    {
+      "endpoint": "test.api",
+      "method": "POST",
+      "headers": [
+        "Content-Type: application/json",
+        "Authorization: ${TOKEN}"
+      ],
+      "body":  [
+        {
+            "test": "*"
+        }
+      ]
+    },
+    {
+      "endpoint": "test.api",
+      "method": "POST",
+      "headers": [
+        "Content-Type: application/json",
+        "Authorization: ${TOKEN}",
+        "test: *"
+      ]
+    }
+  ]
 }
